@@ -7,7 +7,7 @@
                  class="nav-link"
                  :to="route.path">{{route.meta.title}}</router-link>
   </div>
-  <div class="app-wrapper">
+  <div class="app-wrapper overflow-hidden">
     <router-view />
   </div>
 </template>
