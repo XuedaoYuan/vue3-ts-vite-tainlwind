@@ -34,24 +34,45 @@ const routes: Array<RouteRecordRaw> = [
     path: '/tailwind',
     name: 'Tailwind',
     component: () =>
-      import(
-        /* webpackChunkName: "about" */ '@/views/Tailwind/Tailwind.vue'
-      ),
+      import(/* webpackChunkName: "about" */ '@/views/Tailwind/Tailwind.vue'),
     meta: {
       title: 'Test Tailwind'
     }
+  },
+  {
+    path: '/lifeCycle',
+    name: 'LifeCycle',
+    component: () =>
+      import(
+        /* webpackChunkName: "life-cycle" */ '@/views/LifeCycle/LifeCycle.vue'
+      ),
+    meta: {
+      title: 'Life Cycle'
+    }
+  },
+  {
+    path: '/inputTest',
+    name: 'InputTest',
+    component: () =>
+      import(
+        /* webpackChunkName: "input-test" */ '@/views/InputTest/InputTest.vue'
+      ),
+    meta: {
+      title: 'Input Test'
+    }
+  },
+  {
+    path: '/compositionApi',
+    name: 'CompositionApi',
+    component: () =>
+      import(
+        /* webpackChunkName: "composition-api" */ '@/views/CompositionApi/CompositionApi.vue'
+      ),
+    props: () => ({ testProp: 'testProp' }),
+    meta: {
+      title: 'Composition Api'
+    }
   }
-  //   {
-  //     path: '/lifeCycle',
-  //     name: 'LifeCycle',
-  //     component: () =>
-  //       import(
-  //         /* webpackChunkName: "life-cycle" */ '@/views/LifeCycle/LifeCycle.vue'
-  //       ),
-  //     meta: {
-  //       title: 'Life Cycle'
-  //     }
-  //   }
 ];
 
 const router = createRouter({

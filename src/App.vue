@@ -42,6 +42,9 @@ export default {
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
+.router-link-active {
+  background-color: lightcyan;
+}
 .app-wrapper {
   flex: 1;
   height: 100%;
